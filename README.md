@@ -1,22 +1,22 @@
 # NANDRIPA
 
-![NANDRIPA Logo](nandripa-logo.jpeg)
+<p align="center">
+  <img src="nandripa-logo.jpeg" alt="NANDRIPA Logo" width="500">
+</p>
 
-## Ideas → Technology → Real-World Solutions
+<p align="center">
+  <strong>Ideas → Technology → Real-World Solutions</strong>
+</p>
 
 Welcome to the official NANDRIPA technology repository.
 
 NANDRIPA is a growing digital brand exploring technology, AI, automation, software, and innovative digital solutions.
 
-## 🌐 Current Project
+## 🚀 Current Project
 
 ### NANDRIPA Website
 
 This repository contains the source code for the official NANDRIPA website.
-
-## 🚀 Our Vision
-
-To turn ideas into useful, practical, and meaningful real-world solutions through technology.
 
 ## 💡 What We're Exploring
 
