@@ -152,7 +152,7 @@ nav{
 <a href="#">Collections</a>
 <a href="#">Build Your Box</a>
 <a href="#">Corporate Gifts</a>
-<a href="#">About</a>
+<a href="#" id="aboutBtn">About</a>
 <a href="https://wa.me/919025492809" target="_blank">Contact</a>
 </nav>
 
@@ -289,6 +289,49 @@ Gifts from nature, made for every celebration.
 </p>
 
 </footer>
+<div id="aboutModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
 
+        <h2>About NANDRIPA</h2>
+
+        <p><strong>Rooted in Nature. Crafted with Gratitude.</strong></p>
+
+        <p>
+            NANDRIPA creates thoughtful gifts inspired by nature.
+        </p>
+
+        <p>
+            From premium nuts and natural products to beautifully
+            designed gift boxes, every product is carefully selected
+            to make every celebration special.
+        </p>
+
+        <p>
+            Gifts from nature, made for every celebration.
+        </p>
+    </div>
+</div>
+
+<script>
+const aboutBtn = document.getElementById("aboutBtn");
+const modal = document.getElementById("aboutModal");
+const closeBtn = document.querySelector(".close");
+
+aboutBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    modal.style.display = "block";
+});
+
+closeBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+});
+
+window.addEventListener("click", function (e) {
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+});
+</script>
 </body>
 </html>
