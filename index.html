@@ -86,8 +86,11 @@ nav a{
 }
 
 .hero-image img{
-    max-width:550px;
-    width:100%;
+    width:500px;
+    max-width:100%;
+    height:auto;
+    border-radius:20px;
+}
 }
 
 .section{
@@ -126,11 +129,19 @@ footer{
 @media(max-width:768px){
 
 .hero{
-    text-align:center;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+    padding:80px 8%;
+    gap:50px;
+}
 }
 
 .hero-text h1{
-    font-size:48px;
+    font-size:90px;
+    line-height:1.1;
+}
 }
 
 nav{
