@@ -118,3 +118,165 @@
 </a>
 
 </body>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+    background:#f5f5f7;
+    color:#111111;
+}
+
+/* Header */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#ffffff;
+    border-bottom:1px solid #eeeeee;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo img{
+    width:120px;
+    height:auto;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#111111;
+    font-size:15px;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:100px 8% 70px;
+}
+
+.hero h4{
+    letter-spacing:3px;
+    margin-bottom:20px;
+    color:#666666;
+}
+
+.hero h1{
+    font-size:72px;
+    margin-bottom:25px;
+}
+
+.hero p{
+    max-width:800px;
+    margin:auto;
+    font-size:22px;
+    line-height:1.8;
+    color:#555555;
+}
+
+/* Business Cards */
+
+.business-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+    padding:0 8% 100px;
+}
+
+.business-card{
+    background:#ffffff;
+    border-radius:35px;
+    padding:50px;
+    text-decoration:none;
+    color:#111111;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.business-card:hover{
+    transform:translateY(-10px);
+}
+
+.business-card h2{
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.business-card p{
+    color:#666666;
+    line-height:1.8;
+}
+
+/* About */
+
+.about{
+    background:#ffffff;
+    padding:100px 8%;
+    text-align:center;
+}
+
+.about h2{
+    font-size:50px;
+    margin-bottom:30px;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    font-size:22px;
+    line-height:1.8;
+    color:#555555;
+}
+
+/* WhatsApp */
+
+.whatsapp{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#25D366;
+    text-decoration:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .business-card{
+        padding:35px;
+    }
+}
