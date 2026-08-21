@@ -7,9 +7,13 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>NANDRIPA | Family Business Hub</title>
+<title>NANDRIPA | One Platform. Many Businesses.</title>
 
 <style>
+
+/* =========================
+   RESET
+========================= */
 
 *{
     margin:0;
@@ -17,209 +21,351 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
     background:#f5f5f7;
     color:#111;
+    padding-bottom:75px;
 }
 
-/* HEADER */
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+
+/* =========================
+   HEADER
+========================= */
 
 header{
+    position:sticky;
+    top:0;
+    z-index:900;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 8%;
-    background:white;
+
+    padding:15px 7%;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(15px);
+
     border-bottom:1px solid #e5e5e5;
 }
 
 .logo img{
-    width:120px;
-    height:auto;
+    width:105px;
+    display:block;
 }
 
 nav{
     display:flex;
-    gap:30px;
+    gap:25px;
 }
 
 nav a{
-    text-decoration:none;
-    color:#111;
-    font-weight:500;
+    font-size:15px;
+    font-weight:600;
 }
 
 nav a:hover{
     color:#666;
 }
 
-/* HERO */
+
+/* =========================
+   HERO
+========================= */
 
 .hero{
     text-align:center;
-    padding:80px 8% 70px;
+
+    padding:80px 20px 65px;
+
+    background:white;
 }
 
 .hero h3{
-    letter-spacing:3px;
-    color:#666;
-    margin-bottom:20px;
-    font-size:18px;
+    font-size:14px;
+    letter-spacing:4px;
+    color:#777;
+    margin-bottom:18px;
 }
 
 .hero h1{
-    font-size:60px;
+    font-size:58px;
+    line-height:1.05;
     margin-bottom:20px;
 }
 
 .hero p{
-    font-size:22px;
-    color:#666;
-    max-width:800px;
+    max-width:700px;
     margin:auto;
+
+    color:#666;
+
+    font-size:20px;
     line-height:1.6;
 }
 
-/* BUSINESS CARDS */
+
+/* =========================
+   MAIN BUTTON
+========================= */
+
+.main-button{
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:15px 28px;
+
+    background:#111;
+    color:white;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    transition:.2s;
+}
+
+.main-button:hover{
+    transform:translateY(-2px);
+    background:#333;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.section{
+    padding:65px 7%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#666;
+}
+
+
+/* =========================
+   BUSINESS GRID
+========================= */
 
 .business-grid{
-    display:grid;
-    grid-template-columns:repeat(2, minmax(280px, 1fr));
-    gap:30px;
-    padding:0 8% 100px;
-    max-width:1200px;
+    max-width:1150px;
     margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
 }
 
 .card{
-    display:block;
     background:white;
-    padding:40px;
-    border-radius:30px;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    text-decoration:none;
-    color:#111;
-    transition:transform .2s ease, box-shadow .2s ease;
+
+    padding:35px;
+
+    border-radius:28px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+
+    transition:.25s;
 }
 
 .card:hover{
     transform:translateY(-5px);
-    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.10);
 }
 
-.card h2{
+.card-icon{
+    font-size:40px;
     margin-bottom:20px;
-    font-size:28px;
+}
+
+.card h3{
+    font-size:25px;
+    margin-bottom:10px;
 }
 
 .card p{
     color:#666;
-    line-height:1.8;
-    font-size:17px;
+    line-height:1.7;
 }
 
-/* NANDRIPA SHOP */
+.card-button{
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:10px 18px;
+
+    border-radius:20px;
+
+    background:#f0f0f2;
+
+    font-weight:600;
+
+    font-size:14px;
+}
+
+
+/* =========================
+   SHOP
+========================= */
 
 .shop-section{
     background:white;
-    padding:80px 8%;
-    text-align:center;
-}
 
-.shop-section h2{
-    font-size:40px;
-    margin-bottom:15px;
-}
-
-.shop-section > p{
-    color:#666;
-    font-size:18px;
-    margin-bottom:40px;
+    padding:70px 7%;
 }
 
 .product-grid{
     max-width:1100px;
     margin:auto;
+
     display:grid;
+
     grid-template-columns:repeat(3,1fr);
-    gap:30px;
+
+    gap:25px;
 }
 
 .product-card{
     background:#f5f5f7;
+
+    padding:20px;
+
     border-radius:25px;
-    padding:25px;
-    text-align:left;
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
 }
 
 .product-card img{
     width:100%;
+
     height:220px;
+
     object-fit:cover;
+
     border-radius:18px;
-    margin-bottom:20px;
+
+    margin-bottom:18px;
 }
 
 .product-card h3{
-    font-size:24px;
+    font-size:22px;
     margin-bottom:10px;
 }
 
 .product-card p{
     color:#666;
     line-height:1.6;
+
     margin-bottom:15px;
 }
 
 .product-price{
-    font-size:22px;
     font-weight:700;
+    font-size:19px;
+
     margin-bottom:15px;
 }
 
 .buy-button{
     display:block;
+
     width:100%;
-    padding:14px;
+
+    padding:13px;
+
+    text-align:center;
+
     background:#111;
     color:white;
-    text-align:center;
-    text-decoration:none;
+
     border-radius:12px;
+
     font-weight:600;
-    transition:.2s;
 }
 
 .buy-button:hover{
     background:#333;
 }
 
-/* SHOP MOBILE */
 
-@media(max-width:768px){
+/* =========================
+   JOIN NANDRIPA
+========================= */
 
-    .shop-section{
-        padding:60px 20px;
-    }
+.join-section{
+    padding:70px 20px;
 
-    .shop-section h2{
-        font-size:32px;
-    }
+    text-align:center;
 
-    .product-grid{
-        grid-template-columns:1fr;
-    }
-
+    background:#f5f5f7;
 }
-    
-/* FOOTER */
+
+.join-section h2{
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.join-section p{
+    max-width:650px;
+    margin:auto;
+
+    color:#666;
+
+    line-height:1.7;
+}
+
+.join-button{
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:15px 30px;
+
+    border-radius:30px;
+
+    background:#111;
+    color:white;
+
+    font-weight:600;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
 
 footer{
     background:#111;
+
     color:white;
+
     text-align:center;
+
     padding:50px 20px;
 }
 
@@ -230,84 +376,222 @@ footer h3{
 
 footer p{
     margin:8px 0;
-    color:#ccc;
+    color:#bbb;
 }
 
-/* WHATSAPP */
+
+/* =========================
+   WHATSAPP
+========================= */
 
 .whatsapp{
     position:fixed;
-    bottom:25px;
-    right:25px;
-    width:60px;
-    height:60px;
-    background:#25D366;
-    border-radius:50%;
+
+    right:20px;
+    bottom:90px;
+
+    width:58px;
+    height:58px;
+
     display:flex;
+
     justify-content:center;
     align-items:center;
-    text-decoration:none;
-    font-size:30px;
+
+    background:#25D366;
+
+    color:white;
+
+    border-radius:50%;
+
+    font-size:28px;
+
     z-index:1000;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
 }
 
-/* MOBILE */
+
+/* =========================
+   MOBILE BOTTOM NAV
+========================= */
+
+.mobile-nav{
+    display:none;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:900px){
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .product-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:768px){
 
+    body{
+        padding-bottom:70px;
+    }
+
     header{
-        flex-direction:column;
-        gap:20px;
-        padding:20px;
+        padding:12px 20px;
+    }
+
+    .logo img{
+        width:90px;
     }
 
     nav{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
+        display:none;
     }
 
+
+    /* HERO */
+
     .hero{
-        padding:60px 20px 50px;
+        padding:55px 20px 50px;
+    }
+
+    .hero h3{
+        font-size:12px;
+        letter-spacing:3px;
     }
 
     .hero h1{
-        font-size:42px;
+        font-size:38px;
     }
 
     .hero p{
-        font-size:18px;
+        font-size:17px;
     }
+
+
+    /* SECTIONS */
+
+    .section{
+        padding:50px 20px;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+
+    /* BUSINESS */
 
     .business-grid{
         grid-template-columns:1fr;
-        padding:0 20px 60px;
+        gap:18px;
     }
 
     .card{
-        padding:30px;
+        padding:28px;
     }
 
-    .card h2{
-        font-size:24px;
+
+    /* SHOP */
+
+    .shop-section{
+        padding:55px 20px;
+    }
+
+    .product-grid{
+        grid-template-columns:1fr;
+    }
+
+
+    /* JOIN */
+
+    .join-section{
+        padding:55px 20px;
+    }
+
+    .join-section h2{
+        font-size:30px;
+    }
+
+
+    /* WHATSAPP */
+
+    .whatsapp{
+        bottom:85px;
+        right:18px;
+    }
+
+
+    /* MOBILE NAV */
+
+    .mobile-nav{
+        position:fixed;
+
+        display:flex;
+
+        left:0;
+        right:0;
+        bottom:0;
+
+        height:68px;
+
+        background:white;
+
+        border-top:1px solid #ddd;
+
+        z-index:999;
+
+        justify-content:space-around;
+        align-items:center;
+    }
+
+    .mobile-nav a{
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        justify-content:center;
+
+        gap:3px;
+
+        font-size:11px;
+
+        color:#555;
+    }
+
+    .mobile-nav span{
+        font-size:21px;
     }
 
 }
 
-/* SMALL PHONES */
 
-@media(max-width:480px){
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media(max-width:400px){
 
     .hero h1{
-        font-size:34px;
+        font-size:33px;
     }
 
-    .hero h3{
-        font-size:15px;
-    }
-
-    nav a{
-        font-size:14px;
+    .hero p{
+        font-size:16px;
     }
 
 }
@@ -320,171 +604,408 @@ footer p{
 <body>
 
 
-<!-- HEADER -->
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
     <div class="logo">
 
-    <a href="index.html">
-        <img src="Nandripa Apple Logo.png" alt="NANDRIPA Logo">
-    </a>
+        <a href="index.html">
 
-</div>
+            <img
+                src="Nandripa Apple Logo.png"
+                alt="NANDRIPA Logo"
+            >
+
+        </a>
+
+    </div>
+
 
     <nav>
 
-        <a href="canaan.html">Canaan Chaats</a>
+        <a href="#businesses">Businesses</a>
 
-        <a href="manna.html">Manna</a>
+        <a href="#shop">Shop</a>
 
-        <a href="shanujohn.html">ShanuJohn</a>
-
-        <a href="gifts.html">Nandripa Gifts</a>
+        <a href="#join">Join NANDRIPA</a>
 
     </nav>
 
 </header>
 
 
-<!-- HERO -->
+
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero">
 
     <h3>WELCOME TO NANDRIPA</h3>
 
-    <h1>One Family. One Business.</h1>
+    <h1>
+        One Platform.<br>
+        Many Businesses.
+    </h1>
 
     <p>
-        Food, gifts, homemade products, and natural living
-        brought together under one family brand.
+        Food, gifts, homemade products and
+        local businesses — connected together
+        through NANDRIPA.
     </p>
+
+    <a
+        href="#businesses"
+        class="main-button"
+    >
+        Explore NANDRIPA
+    </a>
 
 </section>
 
 
-<!-- FOUR BUSINESSES -->
 
-<section class="business-grid">
+<!-- =========================
+     BUSINESSES
+========================= -->
 
+<section
+    class="section"
+    id="businesses"
+>
 
-    <a class="card" href="canaan.html">
+    <div class="section-title">
 
-        <h2>🥗 Canaan Chaats</h2>
-
-        <p>
-            Authentic street food from Kattupakkam.
-        </p>
-
-    </a>
-
-
-    <a class="card" href="manna.html">
-
-        <h2>🍽️ Manna Tiffin Centre</h2>
+        <h2>Our Businesses</h2>
 
         <p>
-            Traditional South Indian cuisine from Mogappair.
+            Discover the businesses behind NANDRIPA.
         </p>
 
-    </a>
+    </div>
 
 
-    <a class="card" href="shanujohn.html">
-
-        <h2>🍯 ShanuJohn Products</h2>
-
-        <p>
-            Honey, pickles, homemade wine, and hair oil.
-        </p>
-
-    </a>
+    <div class="business-grid">
 
 
-    <a class="card" href="gifts.html">
+        <!-- CANAAN -->
 
-        <h2>🎁 NANDRIPA Gifts</h2>
+        <a
+            href="canaan.html"
+            class="card"
+        >
 
-        <p>
-            Premium gift collections for every occasion.
-        </p>
+            <div class="card-icon">
+                🥗
+            </div>
 
-    </a>
+            <h3>
+                Canaan Chaats
+            </h3>
 
+            <p>
+                Authentic street food from
+                Kattupakkam.
+            </p>
+
+            <div class="card-button">
+                Visit Business →
+            </div>
+
+        </a>
+
+
+
+        <!-- MANNA -->
+
+        <a
+            href="manna.html"
+            class="card"
+        >
+
+            <div class="card-icon">
+                🍽️
+            </div>
+
+            <h3>
+                Manna Tiffin Centre
+            </h3>
+
+            <p>
+                Traditional South Indian cuisine
+                from Mogappair.
+            </p>
+
+            <div class="card-button">
+                Visit Business →
+            </div>
+
+        </a>
+
+
+
+        <!-- SHANUJOHN -->
+
+        <a
+            href="shanujohn.html"
+            class="card"
+        >
+
+            <div class="card-icon">
+                🍯
+            </div>
+
+            <h3>
+                ShanuJohn Products
+            </h3>
+
+            <p>
+                Honey, pickles, homemade products
+                and natural living.
+            </p>
+
+            <div class="card-button">
+                Visit Business →
+            </div>
+
+        </a>
+
+
+
+        <!-- GIFTS -->
+
+        <a
+            href="gifts.html"
+            class="card"
+        >
+
+            <div class="card-icon">
+                🎁
+            </div>
+
+            <h3>
+                NANDRIPA Gifts
+            </h3>
+
+            <p>
+                Premium gift collections for
+                every occasion.
+            </p>
+
+            <div class="card-button">
+                Visit Business →
+            </div>
+
+        </a>
+
+
+    </div>
 
 </section>
 
-<!-- NANDRIPA SHOP -->
 
-<section class="shop-section">
 
-    <h2>🛍️ NANDRIPA SHOP</h2>
+<!-- =========================
+     NANDRIPA SHOP
+========================= -->
 
-    <p>
-        Quality products from our family to your family.
-    </p>
+<section
+    class="shop-section"
+    id="shop"
+>
+
+    <div class="section-title">
+
+        <h2>🛍️ NANDRIPA Shop</h2>
+
+        <p>
+            Quality products from our family
+            to your family.
+        </p>
+
+    </div>
+
 
     <div class="product-grid">
+
 
         <!-- CASHEWS -->
 
         <div class="product-card">
 
-            <img src="OurCashews.png"
-     alt="NANDRIPA Premium Cashews">
+            <img
+                src="OurCashews.png"
+                alt="NANDRIPA Premium Cashews"
+            >
 
-            <h3>🥜 Premium Cashews</h3>
+            <h3>
+                🥜 Premium Cashews
+            </h3>
 
             <p>
-                Premium quality cashews, carefully selected
-                for freshness and great taste.
+                Premium quality cashews,
+                carefully selected for freshness
+                and great taste.
             </p>
 
             <div class="product-price">
-    Coming Soon
-</div>
+                Coming Soon
+            </div>
 
-            <a class="buy-button"
-   href="https://wa.me/919043910829?text=Hello%20NANDRIPA,%20I%20am%20interested%20in%20your%20Premium%20Cashews."
-   target="_blank">
-
-    Register Your Interest
-
-</a>
+            <a
+                class="buy-button"
+                href="https://wa.me/919043910829?text=Hello%20NANDRIPA,%20I%20am%20interested%20in%20your%20Premium%20Cashews."
+                target="_blank"
+            >
+                Register Your Interest
+            </a>
 
         </div>
 
+
     </div>
 
-</section>    
+</section>
 
-<!-- FOOTER -->
+
+
+<!-- =========================
+     JOIN NANDRIPA
+========================= -->
+
+<section
+    class="join-section"
+    id="join"
+>
+
+    <h2>
+        🤝 Join NANDRIPA
+    </h2>
+
+    <p>
+
+        Are you a business owner?
+
+        Join NANDRIPA and bring your products
+        and services to more customers.
+
+        Our goal is to connect local businesses
+        through one powerful platform.
+
+    </p>
+
+
+    <a
+        href="mailto:hello@nandripa.com"
+        class="join-button"
+    >
+        Join NANDRIPA
+
+    </a>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
     <h3>NANDRIPA</h3>
 
-    <p>One Family. Four Businesses.</p>
+    <p>
+        One Platform. Many Businesses.
+    </p>
 
-    <p>Kattupakkam • Mogappair • Chennai</p>
+    <p>
+        Kattupakkam • Mogappair • Chennai
+    </p>
 
-    <p>WhatsApp: +91 9043910829</p>
+    <p>
+        WhatsApp: +91 9043910829
+    </p>
 
-    <p>© 2026 NANDRIPA. All rights reserved.</p>
+    <p>
+        © 2026 NANDRIPA. All rights reserved.
+    </p>
 
 </footer>
 
 
-<!-- WHATSAPP -->
 
-<a class="whatsapp"
-   href="https://wa.me/919043910829"
-   target="_blank"
-   aria-label="Chat with NANDRIPA on WhatsApp">
+<!-- =========================
+     WHATSAPP
+========================= -->
+
+<a
+    class="whatsapp"
+    href="https://wa.me/919043910829"
+    target="_blank"
+    aria-label="Chat with NANDRIPA on WhatsApp"
+>
 
     💬
 
 </a>
+
+
+
+<!-- =========================
+     MOBILE BOTTOM NAVIGATION
+========================= -->
+
+<div class="mobile-nav">
+
+    <a href="index.html">
+
+        <span>🏠</span>
+
+        Home
+
+    </a>
+
+
+    <a href="#businesses">
+
+        <span>🏪</span>
+
+        Businesses
+
+    </a>
+
+
+    <a href="#shop">
+
+        <span>🛍️</span>
+
+        Shop
+
+    </a>
+
+
+    <a href="#join">
+
+        <span>🤝</span>
+
+        Join
+
+    </a>
+
+
+    <a href="#">
+
+        <span>👤</span>
+
+        Account
+
+    </a>
+
+</div>
 
 
 </body>
