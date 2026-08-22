@@ -454,10 +454,333 @@ footer p{
         </div>
 
 
-        <form
-            action="https://formspree.io/f/xqpzjbrq"
-            method="POST"
+        <div data-fs-success class="success-message">
+
+    <div class="success-icon">
+        ✓
+    </div>
+
+    <h2>
+        Thank You!
+    </h2>
+
+    <p>
+        Your business application has been received successfully.
+    </p>
+
+    <p>
+        Our NANDRIPA team will review your information
+        and contact you shortly.
+    </p>
+
+    <p class="success-slogan">
+        Connecting people, supporting businesses,
+        growing together.
+    </p>
+
+    <a
+        href="index.html"
+        class="back-button"
+    >
+        🏠 Back to NANDRIPA
+    </a>
+
+</div>
+
+
+<div data-fs-error class="form-error"></div>
+
+
+<form
+    id="nandripa-join-form"
+>
+
+    <input
+        type="hidden"
+        name="subject"
+        value="NANDRIPA Business Registration"
+    >
+
+
+    <div class="form-group">
+
+        <label for="business_name">
+            Business Name *
+        </label>
+
+        <input
+            type="text"
+            id="business_name"
+            name="business_name"
+            placeholder="Enter your business name"
+            data-fs-field
+            required
         >
+
+        <span data-fs-error="business_name"></span>
+
+    </div>
+
+
+    <div class="form-row">
+
+        <div class="form-group">
+
+            <label for="owner_name">
+                Owner Name *
+            </label>
+
+            <input
+                type="text"
+                id="owner_name"
+                name="owner_name"
+                placeholder="Your full name"
+                data-fs-field
+                required
+            >
+
+            <span data-fs-error="owner_name"></span>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="phone">
+                WhatsApp Number *
+            </label>
+
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+91 XXXXX XXXXX"
+                data-fs-field
+                required
+            >
+
+            <span data-fs-error="phone"></span>
+
+        </div>
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label for="email">
+            Email Address *
+        </label>
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your@email.com"
+            data-fs-field
+            required
+        >
+
+        <span data-fs-error="email"></span>
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label for="category">
+            Business Category *
+        </label>
+
+        <select
+            id="category"
+            name="business_category"
+            data-fs-field
+            required
+        >
+
+            <option value="">
+                Select your business category
+            </option>
+
+            <option>
+                Food & Restaurant
+            </option>
+
+            <option>
+                Homemade Products
+            </option>
+
+            <option>
+                Gifts
+            </option>
+
+            <option>
+                Fashion
+            </option>
+
+            <option>
+                Beauty & Personal Care
+            </option>
+
+            <option>
+                Grocery & Food Products
+            </option>
+
+            <option>
+                Services
+            </option>
+
+            <option>
+                Retail
+            </option>
+
+            <option>
+                Other
+            </option>
+
+        </select>
+
+        <span data-fs-error="business_category"></span>
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label for="location">
+            Business Location *
+        </label>
+
+        <input
+            type="text"
+            id="location"
+            name="business_location"
+            placeholder="City / Area"
+            data-fs-field
+            required
+        >
+
+        <span data-fs-error="business_location"></span>
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label for="description">
+            Tell us about your business *
+        </label>
+
+        <textarea
+            id="description"
+            name="business_description"
+            placeholder="What do you sell or what services do you provide?"
+            data-fs-field
+            required
+        ></textarea>
+
+        <span data-fs-error="business_description"></span>
+
+    </div>
+
+
+    <div class="form-row">
+
+        <div class="form-group">
+
+            <label for="website">
+                Website
+            </label>
+
+            <input
+                type="url"
+                id="website"
+                name="website"
+                placeholder="https://yourwebsite.com"
+                data-fs-field
+            >
+
+            <span data-fs-error="website"></span>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="instagram">
+                Instagram
+            </label>
+
+            <input
+                type="text"
+                id="instagram"
+                name="instagram"
+                placeholder="@yourbusiness"
+                data-fs-field
+            >
+
+            <span data-fs-error="instagram"></span>
+
+        </div>
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label for="logo_link">
+            Business Logo / Catalogue Link
+        </label>
+
+        <input
+            type="url"
+            id="logo_link"
+            name="logo_or_catalogue_link"
+            placeholder="Paste a Google Drive, website or image link"
+            data-fs-field
+        >
+
+    </div>
+
+
+    <p class="note">
+
+        You can also send your business logo separately
+        through WhatsApp after submitting your application.
+
+    </p>
+
+
+    <label class="agreement">
+
+        <input
+            type="checkbox"
+            name="agreement"
+            value="I agree"
+            required
+        >
+
+        <span>
+
+            I confirm that the information provided is
+            accurate and I agree to NANDRIPA reviewing
+            my business application.
+
+        </span>
+
+    </label>
+
+
+    <button
+        type="submit"
+        class="submit-button"
+        data-fs-submit-btn
+    >
+        Submit Application
+    </button>
+
+</form>
 
             <!-- EMAIL SUBJECT -->
 
